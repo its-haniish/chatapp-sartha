@@ -4,7 +4,12 @@ const socket = require("socket.io");
 const cors = require("cors");
 const PORT = process.env.PORT || 8080;
 
-// app.use(cors());
+app.use(cors(
+{
+        origin: "https://chatapp-sartha.vercel.app",
+        methods: ["GET", "POST"]
+    }
+));
 
 // Socket.io
 const server = app.listen(PORT, () => {
@@ -13,7 +18,7 @@ const server = app.listen(PORT, () => {
 
 const io = socket(server, {
     cors: {
-        origin: "https://chatapp-sartha.vercel.app/",
+        origin: "https://chatapp-sartha.vercel.app",
         methods: ["GET", "POST"]
     }
 });
