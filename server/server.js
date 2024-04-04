@@ -4,7 +4,7 @@ const socket = require("socket.io");
 const cors = require("cors");
 const PORT = process.env.PORT || 8080;
 
-app.use(cors());
+// app.use(cors());
 
 // Socket.io
 const server = app.listen(PORT, () => {
