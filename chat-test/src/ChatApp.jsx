@@ -104,7 +104,7 @@ const ChatApp = () => {
             {
 
                 !isChatting ? null :
-                    <div className='w-[100%] h-[90vh] border-t overflow-y-scroll ' ref={msgDivRef}>
+                    <div className='w-[100%] h-[82vh] border-t overflow-y-scroll ' ref={msgDivRef}>
                         {msgs.map((elem, index) => {
                             const { sender, message } = elem;
                             return (
