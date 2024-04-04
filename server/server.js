@@ -13,7 +13,7 @@ const server = app.listen(PORT, () => {
 
 const io = socket(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "https://chatapp-sartha.vercel.app/",
         methods: ["GET", "POST"]
     }
 });
