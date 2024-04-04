@@ -70,7 +70,7 @@ const ChatApp = () => {
     useEffect(() => {
         if (name === "" || title === "")
             navigate('/')
-        const newSocket = io('http://localhost:8080', { query: { name, title } }); // Replace with your server URL
+        const newSocket = io('https://chatapp-sartha.onrender.com', { query: { name, title } }); // Replace with your server URL
         setSocket(newSocket);
 
 
