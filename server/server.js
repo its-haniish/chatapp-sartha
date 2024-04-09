@@ -46,7 +46,7 @@ io.on('connection', (socket) => {
         users = users.filter(elem => elem.name !== user.name);
         io.emit("user-disconnected", user);
         console.log("Disconnected user:", user);
-        console.log("Remaining users:", users.length());
+        console.log("Remaining users:", users.length);
     });
 });
 
